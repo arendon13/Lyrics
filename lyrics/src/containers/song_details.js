@@ -44,7 +44,7 @@ class SongDetails extends Component {
         <div className="track-display">
           <TrackInfo track={this.props.track} />
           <TrackLyrics lyrics={this.props.lyrics} />
-          <div className="track-lyrics">You can also find the full lyrics and annotations from <a href={this.props.track.url} target="_blank">Genius</a>.</div>
+          <div className="track-lyrics">You can also find the full lyrics and annotations from <a href={this.props.track.url} target="_blank" rel="noopener noreferrer">Genius</a>.</div>
         </div>
         <div className="video-detail">
           <VideoDisplay video={this.state.selectedVideo} />

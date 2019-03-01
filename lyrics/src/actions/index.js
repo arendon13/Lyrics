@@ -4,7 +4,7 @@ const keys = require('../keys')
 const ROOT_URL = keys.hostURL
 
 export function fetchTracks(term, history){
-  const request = axios.get(`${ROOT_URL}/search`, {
+  const request = axios.get(`${ROOT_URL}/api/search`, {
     headers: { term: term }
   });
 
@@ -20,7 +20,7 @@ export function fetchTracks(term, history){
 
 export function fetchTrack(id){
   return function(dispatch){
-    let url = `${ROOT_URL}/song`;
+    let url = `${ROOT_URL}/api/song`;
     return axios.get(url, {
       headers: { songid: id }
     })
@@ -35,7 +35,7 @@ export function fetchTrack(id){
 
 export function fetchLyrics(url){
   return function(dispatch){
-    let aurl = `${ROOT_URL}/lyrics`;
+    let aurl = `${ROOT_URL}/api/lyrics`;
     return axios.get(aurl, {
       headers: { songurl: url }
     })

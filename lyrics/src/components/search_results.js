@@ -5,7 +5,7 @@ function getTrack(track){
   return(
     <div className="track-result-box" key={track.id}>
       <p><strong>{track.title}</strong> BY <strong>{track.primary_artist.name}</strong></p>
-      <p>The lyrics to this song from Genius can be found <a href={track.url} target="_blank">here</a></p>
+      <p>The lyrics to this song from Genius can be found <a href={track.url} target="_blank" rel="noopener noreferrer">here</a></p>
       <div><Link className="btn btn-success" to={`/song/${getURLSafeString(track.title)}&${getURLSafeString(track.primary_artist.name)}&${track.id}`}>{track.title}</Link></div>
     </div>
   );

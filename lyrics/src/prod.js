@@ -1,4 +1,4 @@
 module.exports = {
-    youtubeAPI: process.env.YOUTUBE_API_KEY,
+    youtubeAPI: `${process.env.REACT_APP_YOUTUBE_API_KEY}`,
     hostURL : ''
 }

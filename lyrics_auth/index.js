@@ -14,12 +14,12 @@ router(app);
 
 if (process.env.NODE_ENV === 'production') {
     //Express to serve up production assets
-    app.use(express.static('client/build'));
+    app.use(express.static('lyrics/build'));
     //Expess will serve up index.html file
     //if route is not recognized
     const path = require('path');
     app.get('*', (req, res) => {
-      res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'));
+      res.sendFile(path.resolve(__dirname, 'lyrics', 'build', 'index.html'));
     });
   }
 

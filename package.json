@@ -10,7 +10,7 @@
     "start": "node lyrics_auth/index",
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon lyrics_auth/index.js",
-    "heroku-postbuild": "cd lyrics/ && npm install && npm install --only=dev --no-shrinkwrap && npm run build"
+    "heroku-postbuild": "cd lyrics/ && npm install && npm install && npm run build"
   },
   "author": "",
   "license": "ISC",
@@ -18,11 +18,11 @@
     "body-parser": "^1.18.2",
     "cors": "^2.8.4",
     "express": "^4.16.2",
-    "morgan": "^1.9.0",
+    "morgan": "^1.9.1",
     "node-genius": "^1.1.0",
-    "nodemon": "^1.12.5",
+    "nodemon": "^1.18.10",
     "path-parser": "^4.2.0",
-    "request": "^2.83.0",
+    "request": "^2.88.0",
     "scraperjs": "^1.2.0"
   }
 }

@@ -1,7 +1,7 @@
-const config = require('../config');
+const config = require('../auth_keys');
 var Genius = require("node-genius");
 const keys = require('../auth_keys')
-var geniusClient = new Genius(config.config.access_token);
+var geniusClient = new Genius(config.geniusAPI);
 var scraperjs = require('scraperjs');
 
 exports.song = function(req, res, next){

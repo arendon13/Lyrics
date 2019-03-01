@@ -26,3 +26,4 @@ ReactDOM.render(
     , document.getElementById('root')
 );
 registerServiceWorker();
+console.log('test: ', process.env.REACT_APP_YOUTUBE_API_KEY);
